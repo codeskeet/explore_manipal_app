@@ -1,4 +1,4 @@
-# trave_x
+# Explore Manipal App
 
 A new Flutter application.
 
