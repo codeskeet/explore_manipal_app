@@ -1,17 +1,16 @@
 class RecommendedList {
   String name;
-  String tagLine;
   String image;
   List<String> images;
   String description;
   String dist;
 
-  RecommendedList(this.name, this.tagLine, this.image, this.images,
+  RecommendedList(this.name, this.image, this.images,
       this.description, this.dist);
 }
 
 List<RecommendedList> recommendations = recommendationsData
-    .map((item) => RecommendedList(item['name'], item['tagLine'], item['image'],
+    .map((item) => RecommendedList(item['name'], item['image'],
         item['images'], item['description'], item['dist']))
     .toList();
 
@@ -64,7 +63,6 @@ var recommendationsData = [
   },
   {
     "name": "Hoode Beach, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Hoode_Beach.jpg",
     "images": [
       "images/Hoode_Beach.jpg",
@@ -75,7 +73,6 @@ var recommendationsData = [
   },
   {
     "name": "Kaup Beach, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Kaup_beach.jpg",
     "images": ["images/Kaup_beach_1.jpg"],
     "description":
@@ -84,7 +81,6 @@ var recommendationsData = [
   },
   {
     "name": "Malpe Beach, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Malpe beach.jpg",
     "images": [
       "images/Malpe beach.jpg",
@@ -96,7 +92,6 @@ var recommendationsData = [
   },
   {
     "name": "Manipal Lake, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Manipal lake_.jpg",
     "images": ["images/Manipal lake_.jpg"],
     "description":
@@ -105,7 +100,6 @@ var recommendationsData = [
   },
   {
     "name": "Mattu Beach, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Mattu beach.jpg",
     "images": ["images/Mattu beach.jpg", "images/Mattu beach 2.jpg"],
     "description":
@@ -114,7 +108,6 @@ var recommendationsData = [
   },
   {
     "name": "MIT, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/MIT.jpeg",
     "images": ["images/MIT_1.jpeg"],
     "description":
@@ -123,7 +116,6 @@ var recommendationsData = [
   },
   {
     "name": "Student Plaza, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/Student Plaza.JPG",
     "images": ["images/StudentPlaza2.jpeg"],
     "description":
@@ -132,7 +124,6 @@ var recommendationsData = [
   },
   {
     "name": "Tiger Circle, Manipal",
-    "tagLine": "The Singapore Tourism Board",
     "image": "images/TC.jpg",
     "images": ["images/TC_1.jpeg"],
     "description":
